@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { SmoothCorners } from "react-smooth-corners";
 import Balancer from "react-wrap-balancer";
 
-export default function Widget(props: {
+export default function HomeCard(props: {
     children?: React.ReactNode;
     className?: string;
     background: string;

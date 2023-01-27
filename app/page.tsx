@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import YinYang from "@/components/symbols/yinyang";
-import Widget from "@/components/widget/widget";
+import HomeCard from "@/components/widget/homeCard";
 import useWindowDimensions from "@/hooks/windowDimensions";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
@@ -70,14 +70,14 @@ export default function Home() {
                         </button>
                     </motion.div>
                     <div className='flex flex-col md:flex-row justify-around h-96 w-full gap-12'>
-                        <Widget
+                        <HomeCard
                             className='md:w-3/5 h-full w-full'
                             background={`bg-[url('/resources/banners/apple-music.png')]`}
                             onClick={() => {
                                 router.push("/portfolio/apple-music");
                             }}
                         />
-                        <Widget
+                        <HomeCard
                             className='md:w-2/5 h-full w-full'
                             background={`bg-[url('/resources/banners/cask.png')]`}
                             onClick={() => {
@@ -86,7 +86,7 @@ export default function Home() {
                         />
                     </div>
                     <div className='flex flex-col md:flex-row justify-around h-88 w-full gap-12'>
-                        <Widget
+                        <HomeCard
                             className='md:w-2/5 h-full w-full'
                             background={`bg-[url('/resources/banners/react-turbo-search-box.png')]`}
                             onClick={() => {
@@ -95,7 +95,7 @@ export default function Home() {
                                 );
                             }}
                         />
-                        <Widget
+                        <HomeCard
                             className='md:w-3/5 h-full w-full'
                             background={`bg-[url('/resources/banners/instapath.png')]`}
                             onClick={() => {
