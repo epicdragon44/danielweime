@@ -68,6 +68,12 @@ export default function Navbar() {
                 >
                     Portfolio
                 </Link>
+                <Link
+                    href='https://drive.google.com/file/d/1l1oNo8SUnCJbCQBkFfK9uCpVSlW8rTGZ/view?usp=sharing'
+                    className={`border-t-2 border-white hover:border-black transition-all duration-150 px-8 py-2`}
+                >
+                    Resume
+                </Link>
             </div>
         </motion.div>
     );

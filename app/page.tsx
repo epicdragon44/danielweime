@@ -9,6 +9,7 @@ import Widget from "@/components/widget/widget";
 import useWindowDimensions from "@/hooks/windowDimensions";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
+import ResumeButton from "@/components/buttons/ResumeButton";
 
 export default function Home() {
     const router = useRouter();
@@ -34,8 +35,8 @@ export default function Home() {
                         }}
                     >
                         <Balancer>
-                            + I build human-centric, user-facing technologies
-                            and teams.
+                            + I build user-focused, human-centric teams and
+                            technologies.
                         </Balancer>
                     </motion.div>
                     <motion.div
@@ -127,7 +128,7 @@ export default function Home() {
                             experienced manager, and well-versed in the ropes of
                             entrepreneurship.
                         </div>
-                        <div className='mt-16 md:mt-0 md:w-1/3 h-fit max-h-40 w-full flex flex-row flex-wrap md:flex-col justify-around'>
+                        <div className='mt-16 md:mt-0 md:w-1/3 h-fit max-h-40 w-full flex flex-row flex-wrap md:flex-col justify-start'>
                             <Image
                                 src='/resources/companies/dti-logo.png'
                                 alt='DTI Logo'
@@ -163,11 +164,7 @@ export default function Home() {
                                     Contact or Follow Me →
                                 </Link>
                             </button>
-                            <button className='bg-white text-black px-6 py-1 text-md font-semibold text-left transition-all duration-150 border-l-2 border-black  hover:bg-zinc-200'>
-                                <a href='https://drive.google.com/file/d/1l1oNo8SUnCJbCQBkFfK9uCpVSlW8rTGZ/view?usp=sharing'>
-                                    View Resume →
-                                </a>
-                            </button>
+                            <ResumeButton />
                         </div>
                     </div>
                 </div>

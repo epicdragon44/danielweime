@@ -1,10 +1,12 @@
 import fs from "fs";
 import matter from "gray-matter";
 
+export type MatterType = {
+    [key: string]: any;
+};
+
 export type Post = {
-    frontmatter: {
-        [key: string]: any;
-    };
+    frontmatter: MatterType;
     slug: string;
 };
 
