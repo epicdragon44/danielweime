@@ -19,10 +19,9 @@ export default function Page() {
 
     return (
         <>
-            <h1 className='pl-36 mt-8 -mb-12 font-black text-5xl'>
-                Work Experience
-            </h1>
+            {/* <div className='bg-black w-screen mt-12 -ml-10 mr-0 mb-0'> */}
             <WorksDisplay works={works} />
+            {/* </div> */}
         </>
     );
 }

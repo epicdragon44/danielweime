@@ -11,13 +11,13 @@ export default function ProjectCard({
 }) {
     return (
         <motion.div
-            className='flex font-sans shadow-xl rounded-xl w-96 hover:transform hover:scale-105 transition-all duration-300'
+            className='flex font-sans shadow-2xl rounded-xl w-96 hover:transform hover:scale-105 transition-all duration-300 bg-white '
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
                 type: "linear",
                 duration: 1,
-                delay: 1.1,
+                delay: 1,
             }}
         >
             <form className='flex-auto p-6'>

@@ -22,7 +22,7 @@ export default function HomeCard(props: {
         >
             <div className='cursor-pointer h-full w-full rounded-outer bg-black bg-opacity-20 hover:bg-opacity-0 hover:transform hover:scale-105 transition-all duration-300'>
                 <div
-                    className={`h-full w-full rounded-inner ${props.background} bg-center bg-cover md:blur-sm grayscale hover:blur-none hover:grayscale-0 transition-all duration-300 hover:shadow-xl`}
+                    className={`h-full w-full rounded-inner ${props.background} bg-center bg-cover blur-sm grayscale hover:blur-none hover:grayscale-0 transition-all duration-300 hover:shadow-xl`}
                 >
                     {props.children}
                 </div>

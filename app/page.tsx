@@ -72,39 +72,39 @@ export default function Home() {
                     <div className='flex flex-col md:flex-row justify-around h-96 w-full gap-12'>
                         <HomeCard
                             className='md:w-3/5 h-full w-full'
-                            background={`bg-[url('/resources/banners/apple-music.png')]`}
+                            background={`bg-[url('/resources/banners/dti-feature.png')]`}
                             onClick={() => {
-                                router.push("/portfolio/apple-music");
+                                router.push("/portfolio/dti");
                             }}
                         />
                         <HomeCard
                             className='md:w-2/5 h-full w-full'
-                            background={`bg-[url('/resources/banners/cask.png')]`}
+                            background={`bg-[url('/resources/banners/cask-feature.png')]`}
                             onClick={() => {
                                 router.push("/portfolio/cask");
                             }}
                         />
                     </div>
-                    <div className='flex flex-col md:flex-row justify-around h-88 w-full gap-12'>
+                    <div className='flex flex-col md:flex-row justify-around h-96 w-full gap-12'>
                         <HomeCard
                             className='md:w-2/5 h-full w-full'
-                            background={`bg-[url('/resources/banners/react-turbo-search-box.png')]`}
+                            background={`bg-[url('/resources/banners/apple-feature.png')]`}
+                            onClick={() => {
+                                router.push("/portfolio/apple-music");
+                            }}
+                        />
+                        <HomeCard
+                            className='md:w-3/5 h-full w-full'
+                            background={`bg-[url('/resources/banners/search-feature.png')]`}
                             onClick={() => {
                                 router.push(
                                     "/portfolio/react-turbo-search-box"
                                 );
                             }}
                         />
-                        <HomeCard
-                            className='md:w-3/5 h-full w-full'
-                            background={`bg-[url('/resources/banners/instapath.png')]`}
-                            onClick={() => {
-                                router.push("/portfolio/instapath");
-                            }}
-                        />
                     </div>
                     <div className='flex flex-col md:flex-row justify-end h-16 w-full gap-12 mt-24 md:-mt-10'>
-                        <button className='bg-white  text-zinc-400 px-8 py-0 text-lg font-semibold   hover:bg-zinc-200 transition-all duration-150'>
+                        <button className='bg-white  text-zinc-400 px-8 py-0 text-lg font-semibold hover:bg-zinc-200 transition-all duration-150'>
                             <Link
                                 href='/portfolio'
                                 className='hidden md:inline-block'

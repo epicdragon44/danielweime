@@ -32,7 +32,7 @@ export default function InfoLayout({
                         delay: 0,
                     }}
                 >
-                    <div className='w-fit relative bg-zinc-200 pt-10 pl-10 pr-10 pb-0 mx-32'>
+                    <div className='w-fit relative bg-zinc-200 pt-10 pl-10 pr-10 pb-0 mx-32 '>
                         <Image
                             src='/resources/me.JPG'
                             alt='Picture of Me'
@@ -64,7 +64,7 @@ export default function InfoLayout({
                     }}
                 >
                     <h1 className='text-5xl font-bold text-slate-900 mb-5'>
-                        {route === "/about" ? "About Me" : "Contact Me"}
+                        {route === "/about" ? "Hi, I'm Daniel." : "Contact Me"}
                     </h1>
                     {children}
                     {/* <hr className='mt-12 mb-6' />
