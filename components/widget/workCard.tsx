@@ -2,7 +2,7 @@ import { MatterType } from "@/lib/getcontent";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ProjectCard({
+export default function WorkCard({
     frontmatter,
     slug,
 }: {
@@ -11,13 +11,13 @@ export default function ProjectCard({
 }) {
     return (
         <motion.div
-            className='flex font-sans shadow-xl rounded-xl w-96 hover:transform hover:scale-105 transition-all duration-300'
+            className='flex font-sans shadow-xl rounded-xl w-2/3'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
                 type: "linear",
                 duration: 1,
-                delay: 1.1,
+                delay: 0,
             }}
         >
             <form className='flex-auto p-6'>

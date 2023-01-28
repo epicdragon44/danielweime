@@ -8,6 +8,7 @@ export const enum Route {
     Home = "/",
     About = "/about",
     Contact = "/contact",
+    Work = "/work",
     Portfolio = "/portfolio",
     Experience = "/experience",
 }
@@ -59,6 +60,16 @@ export default function Navbar() {
                     Contact
                 </Link>
                 <Link
+                    href='/work'
+                    className={`${
+                        route === Route.Work
+                            ? "bg-zinc-200 border-t-2 border-black"
+                            : "border-t-2 border-white hover:border-black transition-all duration-150"
+                    } px-8 py-2`}
+                >
+                    Work
+                </Link>
+                <Link
                     href='/portfolio'
                     className={`${
                         route === Route.Portfolio
@@ -66,7 +77,7 @@ export default function Navbar() {
                             : "border-t-2 border-white hover:border-black transition-all duration-150"
                     } px-8 py-2`}
                 >
-                    Portfolio
+                    Projects
                 </Link>
                 <Link
                     href='https://drive.google.com/file/d/1l1oNo8SUnCJbCQBkFfK9uCpVSlW8rTGZ/view?usp=sharing'

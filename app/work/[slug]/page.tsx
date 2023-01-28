@@ -5,17 +5,17 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 import md from "markdown-it";
-import { getProjects, Post, PostWithContent } from "@/lib/getcontent";
+import { getProjects, getWorks, Post, PostWithContent } from "@/lib/getcontent";
 
 export async function generateStaticParams() {
-    const projects = getProjects();
-    return projects.map((post: Post) => ({
+    const works = getWorks();
+    return works.map((post: Post) => ({
         slug: post.slug,
     }));
 }
 
 const getPost = (slug: string): PostWithContent => {
-    const fileName = fs.readFileSync(`content/projects/${slug}.md`, "utf-8");
+    const fileName = fs.readFileSync(`content/work/${slug}.md`, "utf-8");
     const { data: frontmatter, content } = matter(fileName);
     return {
         frontmatter,
@@ -37,12 +37,12 @@ export default function Page({
     return (
         <article className='prose lg:prose-lg mx-auto'>
             {/* <h1>{frontmatter.title}</h1> */}
-            {/* <Image
+            <Image
                 width={64}
                 height={64}
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
-            /> */}
+            />
             <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         </article>
     );

@@ -1,4 +1,4 @@
-import Projects from "@/components/displays/Projects";
+import ProjectsDisplay from "@/components/displays/Projects";
 import { getProjects, MatterType, Post } from "@/lib/getcontent";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function Page() {
 
     return (
         <>
-            <Projects projects={projects} />
+            <ProjectsDisplay projects={projects} />
         </>
     );
 }

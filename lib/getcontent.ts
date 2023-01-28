@@ -14,14 +14,11 @@ export type PostWithContent = Post & {
     content: string;
 };
 
-export function getProjects(): Post[] {
-    const files = fs.readdirSync("content/projects");
+function readFiles(str: string) {
+    const files = fs.readdirSync(str);
     const projects: Post[] = files.map((fileName) => {
         const slug = fileName.replace(".md", "");
-        const readFile = fs.readFileSync(
-            `content/projects/${fileName}`,
-            "utf-8"
-        );
+        const readFile = fs.readFileSync(`${str}/${fileName}`, "utf-8");
         const { data: frontmatter } = matter(readFile);
         return {
             slug,
@@ -29,4 +26,27 @@ export function getProjects(): Post[] {
         };
     });
     return projects;
+}
+
+export function getProjects(): Post[] {
+    return readFiles("content/projects");
+}
+
+export function getWorks(): Post[] {
+    return readFiles("content/work");
+}
+
+export function getAllTags(projects?: Post[], work?: Post[]) {
+    const tags = new Set();
+    if (projects) {
+        projects.forEach((project: Post) => {
+            project.frontmatter.tags.forEach((tag: string) => tags.add(tag));
+        });
+    }
+    if (work) {
+        work.forEach((work: Post) => {
+            work.frontmatter.tags.forEach((tag: string) => tags.add(tag));
+        });
+    }
+    return tags;
 }

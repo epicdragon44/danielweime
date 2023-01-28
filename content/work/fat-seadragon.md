@@ -7,6 +7,8 @@ metaDesc: "An open-source port of the ancient OpenSeaDragon deep image viewer fo
 
 socialImage: resources/yinyang.png
 
+date: "June 2022"
+
 tags:
     - open-source
     - javascript

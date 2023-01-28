@@ -7,6 +7,8 @@ metaDesc: "A super-extra, open-source, TypeScript-ready, mutex-locked, state-pre
 
 socialImage: resources/yinyang.png
 
+date: "January 2023"
+
 tags:
     - open-source
     - typescript
