@@ -1,11 +1,11 @@
 ---
-title: "Turbo Search Box"
+title: "Cornell Design & Tech Initiative"
 
 metaTitle: "An all-powerful search box for React.js"
 
 metaDesc: "A super-extra, open-source, TypeScript-ready, mutex-locked, state-preserving, fuzzy-sorting, pre-and-post-processable search bar for all (some) of your frontend needs."
 
-socialImage: resources/yinyang.png
+image: resources/yinyang.png
 
 date: "January 2023"
 

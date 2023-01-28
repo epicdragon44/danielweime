@@ -1,6 +1,6 @@
 import Projects from "@/components/displays/Projects";
 import WorksDisplay from "@/components/displays/Works";
-import { getProjects, MatterType, Post } from "@/lib/getcontent";
+import { getProjects, getWorks, MatterType, Post } from "@/lib/getcontent";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
@@ -14,7 +14,7 @@ function getAllTags(works: Post[]) {
 }
 
 export default function Page() {
-    const works = useMemo(() => getProjects(), []);
+    const works = useMemo(() => getWorks(), []);
     const tags = useMemo(() => getAllTags(works), [works]);
 
     return (

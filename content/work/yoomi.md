@@ -5,7 +5,7 @@ metaTitle: "A modern port of OpenSeaDragon"
 
 metaDesc: "An open-source port of the ancient OpenSeaDragon deep image viewer for modern React.js projects."
 
-socialImage: resources/yinyang.png
+image: resources/yinyang.png
 
 date: "June 2022"
 

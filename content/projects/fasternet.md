@@ -1,11 +1,9 @@
 ---
 title: "Fasternet"
 
-metaTitle: "Faster web browsing for everyone"
-
 metaDesc: "A Free and Open-Source DNS Resolution tool for faster domain name resolutions from anywhere."
 
-socialImage: resources/yinyang.png
+date: "Mar 2020"
 
 tags:
     - open-source
@@ -13,6 +11,7 @@ tags:
     - windows
     - dns
     - html/css
+    - hackathon
 ---
 
 # Fasternet

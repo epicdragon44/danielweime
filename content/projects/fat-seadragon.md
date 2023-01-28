@@ -1,11 +1,9 @@
 ---
 title: "FatSeaDragon"
 
-metaTitle: "A modern port of OpenSeaDragon"
-
 metaDesc: "An open-source port of the ancient OpenSeaDragon deep image viewer for modern React.js projects."
 
-socialImage: resources/yinyang.png
+date: "Jun 2022"
 
 tags:
     - open-source

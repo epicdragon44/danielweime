@@ -1,9 +1,13 @@
 ---
 title: "Turbo Search Box"
 
+metaTitle: "An all-powerful search box for React.js"
+
 metaDesc: "A super-extra, open-source, TypeScript-ready, mutex-locked, state-preserving, fuzzy-sorting, pre-and-post-processable search bar for all (some) of your frontend needs."
 
-date: "Jan 2023"
+image: resources/yinyang.png
+
+date: "January 2023"
 
 tags:
     - open-source

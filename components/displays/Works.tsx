@@ -5,7 +5,6 @@ import { MatterType, Post } from "@/lib/getcontent";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import ProjectCard from "../widget/projectCard";
 import WorkCard from "../widget/workCard";
 
 export default function WorksDisplay({ works }: { works: Post[] }) {
@@ -14,7 +13,7 @@ export default function WorksDisplay({ works }: { works: Post[] }) {
     return (
         <>
             <motion.div
-                className='sticky top-0 z-25 h-fit flex flex-row justify-between p-0 m-0 w-full bg-white'
+                className='top-0 z-25 h-fit flex flex-row justify-between p-0 m-0 w-full bg-white'
                 animate={{
                     y: 12,
                     opacity: 1,
@@ -34,9 +33,9 @@ export default function WorksDisplay({ works }: { works: Post[] }) {
                 </h1>
             </motion.div>
             <div className='flex flex-col p-16'>
-                <div className='flex flex-row flex-nowrap overflow-x-scroll p-16 gap-8'>
+                <div className='flex flex-col flex-nowrap p-16 gap-8'>
                     {workHead.map(({ slug, frontmatter }) => (
-                        <ProjectCard
+                        <WorkCard
                             key={slug}
                             slug={slug}
                             frontmatter={frontmatter}

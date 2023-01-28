@@ -5,7 +5,7 @@ metaTitle: "Faster web browsing for everyone"
 
 metaDesc: "A Free and Open-Source DNS Resolution tool for faster domain name resolutions from anywhere."
 
-socialImage: resources/yinyang.png
+image: resources/yinyang.png
 
 date: "February 2020"
 

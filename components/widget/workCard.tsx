@@ -1,6 +1,7 @@
 import { MatterType } from "@/lib/getcontent";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function WorkCard({
     frontmatter,
@@ -11,7 +12,7 @@ export default function WorkCard({
 }) {
     return (
         <motion.div
-            className='flex font-sans shadow-xl rounded-xl w-2/3'
+            className='flex font-sans w-full border-t-2 border-t-black hover:bg-zinc-200 transition-all duration-300'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -20,11 +21,11 @@ export default function WorkCard({
                 delay: 0,
             }}
         >
-            <form className='flex-auto p-6'>
+            <form className='flex-auto p-6 w-1/2'>
                 <div className='flex flex-wrap flex-row'>
                     <h1 className='flex-auto text-lg font-semibold text-slate-900'>
                         <Link
-                            href={`/portfolio/${slug}`}
+                            href={`/work/${slug}`}
                             className='p-4 font-bold text-xl'
                         >
                             {frontmatter.title}
@@ -50,6 +51,12 @@ export default function WorkCard({
                     </div>
                 </div>
             </form>
+            <Image
+                src={`/${frontmatter.image}`}
+                alt={frontmatter.title}
+                width={500}
+                height={250}
+            />
         </motion.div>
     );
 }

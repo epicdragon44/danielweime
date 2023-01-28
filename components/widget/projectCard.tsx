@@ -11,7 +11,7 @@ export default function ProjectCard({
 }) {
     return (
         <motion.div
-            className='flex font-sans shadow-2xl rounded-xl w-96 hover:transform hover:scale-105 transition-all duration-300 bg-white '
+            className='flex font-sans shadow-2xl rounded-xl w-96 hover:transform hover:scale-105 transition-all duration-300 bg-white min-w-fit'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -20,7 +20,7 @@ export default function ProjectCard({
                 delay: 1,
             }}
         >
-            <form className='flex-auto p-6'>
+            <form className='flex-auto p-6 w-96'>
                 <div className='flex flex-wrap flex-row'>
                     <h1 className='flex-auto text-lg font-semibold text-slate-900'>
                         <Link
@@ -30,6 +30,9 @@ export default function ProjectCard({
                             {frontmatter.title}
                         </Link>
                     </h1>
+                    <div className='text-sm text-slate-900 font-thin mr-2'>
+                        {frontmatter.date}
+                    </div>
                     <div className='w-full flex-none text-sm font-medium text-slate-700 mt-2 p-4'>
                         {frontmatter.metaDesc}
                     </div>
