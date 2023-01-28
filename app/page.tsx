@@ -66,7 +66,7 @@ export default function Home() {
                         }}
                     >
                         <button className='bg-white text-zinc-400 px-8 py-0 text-lg mt-16 font-semibold hover:bg-zinc-200 transition-all duration-150'>
-                            <Link href='/portfolio'>Select Works</Link>
+                            <span>Select Works</span>
                         </button>
                     </motion.div>
                     <div className='flex flex-col md:flex-row justify-around h-96 w-full gap-12'>

@@ -8,7 +8,7 @@ export default function YinYang() {
             src='/resources/yinyang.png'
             alt='Yin Yang Symbol'
             animate={{
-                rotate: [0, 200, 30, 150, 60, 355],
+                rotate: [0, 175, 15, 125, 30, 360],
             }}
             transition={{
                 duration: 10,
