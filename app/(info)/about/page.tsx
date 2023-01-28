@@ -2,7 +2,7 @@ import ResumeButton from "@/components/buttons/ResumeButton";
 
 export default function AboutPage() {
     return (
-        <article className='prose prose-md'>
+        <article className='prose prose-md text-justify'>
             <br />
             <b>I&apos;m an undergraduate student</b> majoring in <br />
             💻 

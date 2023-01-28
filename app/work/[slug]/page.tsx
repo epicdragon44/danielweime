@@ -35,7 +35,7 @@ export default function Page({
     const { frontmatter, content } = useMemo(() => getPost(slug), [slug]);
 
     return (
-        <article className='prose lg:prose-lg mx-auto'>
+        <article className='prose lg:prose-lg mx-auto text-justify '>
             {/* <h1>{frontmatter.title}</h1> */}
             <Image
                 width={64}

@@ -10,7 +10,7 @@ import {
 export default function Page() {
     return (
         <article className='prose prose-md'>
-            <hr />
+            <br />
             <h3>Get in Touch!</h3>
             <ul className='[&>li]:list-none [&>li]:-ml-4'>
                 <li>

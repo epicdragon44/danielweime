@@ -14,42 +14,47 @@ export default function InfoLayout({
     return (
         <section className='min-h-screen p-4 px-8'>
             {/* CSS grid with two columns when screen size at md or above; only one otherwise */}
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-                {/* Left column */}
+            <div className='flex flex-row-reverse w-screen justify-around'>
+                {/* Right column */}
                 <motion.div
-                    className='flex flex-row justify-center items-start content-center h-full col-span-1 max-h-screen'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    className='w-full min-w-fit max-h-screen xl:inline-block hidden text-center '
+                    initial={{
+                        opacity: 0,
+                        x: 100,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        x: 0,
+                    }}
                     transition={{
                         type: "linear",
                         duration: 1,
                         delay: 0,
                     }}
                 >
-                    <div className='flex flex-col justify-start items-center content-start'>
-                        <div className='w-full relative'>
-                            <Image
-                                src='/resources/me.JPG'
-                                alt='Picture of Me'
-                                width={500}
-                                height={500}
-                                className='rounded-xl md:inline-block hidden'
-                            />
+                    <div className='w-fit relative bg-zinc-200 pt-10 pl-10 pr-10 pb-0 mx-32'>
+                        <Image
+                            src='/resources/me.JPG'
+                            alt='Picture of Me'
+                            width={444}
+                            height={444}
+                        />
+                        <div className='flex flex-col w-full h-36 justify-center items-center content-center'>
+                            <p className='text-lg text-zinc-800 text-center'>
+                                Art by{" "}
+                                <a
+                                    href='https://www.instagram.com/inkeral.png/'
+                                    className='underline'
+                                >
+                                    inkeral.png
+                                </a>
+                            </p>
                         </div>
-                        <p className='text-md text-slate-700 md:inline-block hidden'>
-                            Art by{" "}
-                            <a
-                                href='https://www.instagram.com/inkeral.png/'
-                                className='underline'
-                            >
-                                inkeral.png
-                            </a>
-                        </p>
                     </div>
                 </motion.div>
-                {/* Right column */}
+                {/* Left column */}
                 <motion.div
-                    className='flex flex-col col-span-2 border-l-2 border-zinc-300 px-10 min-h-screen'
+                    className='flex flex-col px-10 min-h-screen w-full'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
