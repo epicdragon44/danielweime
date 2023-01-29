@@ -28,15 +28,16 @@ export default function WorksDisplay({ works }: { works: Post[] }) {
                     delay: 0.5,
                 }}
             >
-                <h1 className='pl-36 mt-8 -mb-12 font-black text-5xl'>
+                <h1 className='pl-16 mt-8 -mb-12 font-black text-5xl'>
                     Work Experience
                 </h1>
             </motion.div>
-            <div className='flex flex-col p-16'>
-                <div className='flex flex-col flex-nowrap p-16 gap-8'>
-                    {workHead.map(({ slug, frontmatter }) => (
+            <div className='flex flex-col -pl-8 py-16 w-screen'>
+                <div className='flex flex-col flex-nowrap p-16'>
+                    {workHead.map(({ slug, frontmatter }, index) => (
                         <WorkCard
-                            key={slug}
+                            key={index}
+                            flip={index % 2 === 0}
                             slug={slug}
                             frontmatter={frontmatter}
                         />

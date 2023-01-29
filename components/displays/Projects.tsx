@@ -77,7 +77,7 @@ export default function ProjectsDisplay({ projects }: { projects: Post[] }) {
                     }}
                 />
             </motion.div>
-            <div className='flex flex-row flex-nowrap overflow-x-scroll p-16 gap-8'>
+            <div className='flex flex-row flex-nowrap overflow-x-scroll p-16 gap-8 overscroll-none'>
                 {projHead.map(({ slug, frontmatter }) => (
                     <ProjectCard
                         key={slug}

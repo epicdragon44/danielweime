@@ -74,7 +74,7 @@ export default function Home() {
                             className='md:w-3/5 h-full w-full'
                             background={`bg-[url('/resources/banners/dti-feature.png')]`}
                             onClick={() => {
-                                router.push("/portfolio/dti");
+                                router.push("/work/dti");
                             }}
                         />
                         <HomeCard
@@ -88,18 +88,18 @@ export default function Home() {
                     <div className='flex flex-col md:flex-row justify-around h-96 w-full gap-12'>
                         <HomeCard
                             className='md:w-2/5 h-full w-full'
-                            background={`bg-[url('/resources/banners/apple-feature.png')]`}
-                            onClick={() => {
-                                router.push("/portfolio/apple-music");
-                            }}
-                        />
-                        <HomeCard
-                            className='md:w-3/5 h-full w-full'
                             background={`bg-[url('/resources/banners/search-feature.png')]`}
                             onClick={() => {
                                 router.push(
                                     "/portfolio/react-turbo-search-box"
                                 );
+                            }}
+                        />
+                        <HomeCard
+                            className='md:w-3/5 h-full w-full'
+                            background={`bg-[url('/resources/banners/apple-feature.png')]`}
+                            onClick={() => {
+                                router.push("/portfolio/apple-music");
                             }}
                         />
                     </div>
